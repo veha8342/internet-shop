@@ -58,7 +58,7 @@ button, input[type="submit"]{
 
 /*DEFAULT COMPONENT START*/
 .bg-wrap{
-    background-color: #edf3d9;
+    background-color: #f4f6f8;
 }
 .custom-icon{
     display: inline-block;
@@ -179,8 +179,8 @@ button, input[type="submit"]{
     align-items: center;
 }
 .season-offer .winter-kit .sale-logo span{
-    width: 50px;
-    height: 35px;
+    width: 70px;
+    height: 60px;
     background-color: #ff5912;
     transform: rotate(45deg);
     display: inline-block;
@@ -188,8 +188,8 @@ button, input[type="submit"]{
 }
 .season-offer .winter-kit .sale-logo::before{
     content: " ";
-    width: 50px;
-    height: 35px;
+    width: 70px;
+    height: 60px;
     background-color: #fb8b00;
     transform: rotate(-45deg);
     display: inline-block;
@@ -201,10 +201,29 @@ button, input[type="submit"]{
     display: flex;
     justify-content: space-around;
 }
-.season-offer .winter-kit .adv-text{
-    padding: 20px 0;
+.season-offer .text-area{
+    padding: 40px 0;
     background-color: #fff;
+    flex-direction: column;
     display: flex;
+    align-items: center;
+}
+.title-sale{
+    padding: 120px 0 80px 0;
+}
+.best-sales .title-sale{
+    text-align: center;
+}
+.best-sales .title-sale span{
+    display: inline-block;
+}
+.item-mini{
+    background-color: #fff;
+    justify-content: space-around;
+}
+.best-sale-list .item-mini{
+    display: flex;
+    align-items: center;
 }
 /*DEFAULT COMPONENT END*/
 
@@ -212,3 +231,4 @@ button, input[type="submit"]{
 
 
 /*ALL STYLES END*/
+
