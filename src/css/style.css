@@ -9,6 +9,7 @@ body {
     color: #111;
     background: #fff;
     font: 12px/1 'Harmonia_regular', sans-serif;
+    background-color: #f4f6f8;
 }
 /*General reset*/
 h1,h2,h3,h4,h5,h6,p{
@@ -40,7 +41,6 @@ button, input[type="submit"]{
 /*DEFAULT CLASSES START*/
 .flex-container{
     display: flex;
-    justify-content: space-between;
 }
 .align-center{
     align-items: center;
@@ -75,11 +75,12 @@ button, input[type="submit"]{
 /*DEFAULT CLASSES END*/
 
 /*DEFAULT COMPONENT START*/
-.bg-wrap{
-    background-color: #f4f6f8;
-}
+
 .custom-icon{
     display: inline-block;
+}
+.icon-like-ic:hover{
+    background-position: -19px -59px;
 }
 .title{
     font-family: 'Harmonia_black';
@@ -186,6 +187,9 @@ button, input[type="submit"]{
 .item:hover .item-img{
     height: 90px;
 }
+.subscribe-form{
+    padding: 37px 42px;
+}
 .header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -286,7 +290,6 @@ button, input[type="submit"]{
 .best-sale-list .item-mini{
     display: flex;
     align-items: center;
-    background-color: #fff;
     justify-content: space-around;
     padding: 30px 0;
 }

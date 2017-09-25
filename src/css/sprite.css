@@ -34,15 +34,22 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 24px;
   height: 17px;
 }
+.icon-like-ic-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -19px -59px;
+  width: 19px;
+  height: 16px;
+}
 .icon-like-ic {
   background-image: url(../img/sprite.png);
   background-position: 0px -59px;
   width: 19px;
   height: 16px;
 }
+
 .icon-mail-ic {
   background-image: url(../img/sprite.png);
-  background-position: -19px -59px;
+  background-position: -38px -59px;
   width: 18px;
   height: 11px;
 }
