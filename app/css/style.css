@@ -33,8 +33,11 @@ input, select, textarea{
 textarea{
     resize:vertical
 }
-button, input[type="submit"]{
+button{
     cursor:pointer;
+}
+label{
+    margin-bottom: 0;
 }
 /*RESET END*/
 /*DEFAULT CLASSES START*/
@@ -209,6 +212,10 @@ button, input[type="submit"]{
 .subscribe-form{
     padding: 37px 42px;
 }
+.subscribe-input-group label{
+    vertical-align: middle;
+    margin-right: 10px;
+}
 .header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -284,7 +291,12 @@ button, input[type="submit"]{
 .items-carousel .price-wrap{
     margin-top: 30px;
 }
-
+.items-carousel .price-wrap a{
+    margin-left: 20px;
+}
+.items-carousel .price-wrap a span{
+    margin-left: 10px;
+}
 .default-section .load-more{
     background-color: #fff;
     text-align: center;
@@ -340,6 +352,9 @@ button, input[type="submit"]{
         -ms-flex-pack: distribute;
             justify-content: space-around;
     padding: 30px 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 .best-sale-list .item-mini:hover{
     -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
@@ -371,6 +386,10 @@ button, input[type="submit"]{
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+}
+.kit .add-to-cart span:last-child{
+    font-family: 'Harmonia_bold';
+    font-size: 30px;
 }
 .sales-block{
     position: relative;

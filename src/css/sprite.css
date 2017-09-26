@@ -46,7 +46,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 19px;
   height: 16px;
 }
-
 .icon-mail-ic {
   background-image: url(../img/sprite.png);
   background-position: -38px -59px;
