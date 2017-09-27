@@ -199,7 +199,7 @@ label{
             border-radius: 50%;
 }
 .item:hover .item-price{
-    display: none;
+    opacity: 0;
 }
 .more-info-on-hover{
     opacity: 0;
@@ -375,9 +375,7 @@ label{
         -ms-flex-pack: distribute;
             justify-content: space-around;
     padding: 30px 0;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
+    position: relative;
 }
 .best-sale-list .item-mini:hover{
     -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
@@ -388,8 +386,27 @@ label{
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 35px;
 }
-.best-sale-list .item-mini .fa-star-o:hover{
+.best-sale-list .item-mini .price-wrap{
+    opacity: 0;
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+}
+.best-sale-list .item-mini:hover .price-wrap{
+    opacity: 1;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.best-sale-list .item-mini:hover .item-rating{
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.best-sale-list .item-mini .item-rating{
     color: #ff5912;
 }
 /*DEFAULT COMPONENT END*/
@@ -455,7 +472,7 @@ label{
     margin-bottom: 30px;
 }
 .footer-wrap{
-    padding: 40px 0;
+    padding: 90px 0;
 }
 .footer-wrap .logo{
     display: -webkit-box;
@@ -469,7 +486,10 @@ label{
             flex-direction: column;
 }
 .footer-wrap .logo a{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+.footer-wrap .about-us a:hover{
+    color: #ff5912;
 }
 .footer-wrap .about-us li{
     margin-bottom: 15px;
