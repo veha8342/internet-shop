@@ -387,5 +387,18 @@ label{
 .category-wrap .item{
     margin-bottom: 30px;
 }
+.footer-wrap{
+    padding: 40px 0;
+}
+.footer-wrap .logo{
+    display: flex;
+    flex-direction: column;
+}
+.footer-wrap .logo a{
+    margin-bottom: 30px;
+}
+.footer-wrap .about-us li{
+    margin-bottom: 15px;
+}
 /*ALL STYLES END*/
 
