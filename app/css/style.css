@@ -128,11 +128,14 @@ label{
     background-color: #edf0f2;
     margin-right: 13px;
 }
+.checkbox-group input[type="checkbox"]:checked + label::before{
+    border-color: #ff5912;
+}
 .checkbox-group input[type="checkbox"]:checked + label{
     color: #ff5912;
 }
-.checkbox-group input[type="checkbox"]:checked + label::before{
-    border-color: #ff5912;
+.checkbox-group + .checkbox-group{
+    margin-top: 35px;
 }
 .item{
     background-color: #fff;
@@ -533,6 +536,49 @@ label{
 }
 .footer-nav .payments a + a{
     margin-left: 10px;
+}
+.range{
+    margin-top: 40px;
+}
+.min-value, .max-value{
+    position: absolute;
+    top: -150%;
+    font-size: 14px;
+    color: #34404b;
+    font-family: Harmonia_semibold;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+}
+#slider-range{
+    height: 3px;
+    background-color: #34404b;
+}
+.range-input-reoup{
+    margin-top: 35px;
+}
+.ui-slider-handle{
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-transform: translateY(-25%);
+        -ms-transform: translateY(-25%);
+            transform: translateY(-25%);
+    background-color: #000;
+}
+.range span.ui-slider-handle{
+    background-color: #000;
+}
+.range .range-input-reoup input{
+    width: 45px;
+    height: 25px;
+    background-color: #edf0f2;
+}
+.add-range-value .range-input-reoup:first-child input{
+    margin-right: 20px;
+}
+.range .range-input-reoup label{
+    margin-right: 14px;
 }
 /*ALL STYLES END*/
 
