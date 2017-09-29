@@ -426,7 +426,7 @@ label{
 .footer-wrap .about-us li{
     margin-bottom: 15px;
 }
-.footer-wrap .about-us ul{
+.footer-wrap .about-us ul + ul{
     margin-left: 115px;
     display: list-item;
     list-style-type: disc;
