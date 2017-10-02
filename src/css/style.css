@@ -246,6 +246,7 @@ label{
 .header .bottom-header .header-nav li{
     font-family: 'Harmonia_regular';
     display: inline-block;
+    font-size: 16px;
 }
 .header .bottom-header .header-nav li a:hover{
     color: #ff5912;
@@ -428,6 +429,8 @@ label{
 }
 .footer-wrap .about-us li{
     margin-bottom: 15px;
+    font-size: 14px;
+    font-family: Harmonia_regular;
 }
 .footer-wrap .about-us ul + ul{
     margin-left: 115px;
@@ -460,7 +463,7 @@ label{
 }
 #slider-range{
     height: 3px;
-    background-color: #34404b;
+    background-color: #edf0f2;
 }
 .range-input-reoup{
     margin-top: 35px;
@@ -483,6 +486,12 @@ label{
 }
 .range .range-input-reoup label{
     margin-right: 14px;
+}
+.ui-widget.ui-widget-content{
+    border: none;
+}
+.ui-widget-header{
+    background-color: #000;
 }
 /*ALL STYLES END*/
 
