@@ -14,8 +14,8 @@
  * ====================================================================================================================*/
 @font-face {
   font-family: 'flexslider-icon';
-  src: url('fonts/flexslider-icon.eot');
-  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  src: url('../fonts/flexslider-icon.eot');
+  src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -226,17 +226,23 @@ html[xmlns] .flexslider .slides {
   margin: 5px 0 0;
   position: static;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .flex-control-thumbs li {
-  width: 25%;
+  width: 100px;
+  height: 70px;
   float: left;
   margin: 0;
 }
 .flex-control-thumbs img {
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: .7;
+  height: 100%;
   cursor: pointer;
   -moz-user-select: none;
   -webkit-transition: all 1s ease;
