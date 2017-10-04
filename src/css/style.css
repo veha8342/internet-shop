@@ -103,6 +103,7 @@ label{
 .default-section{
     padding: 60px 0;
 }
+
 .checkbox-group input[type="checkbox"]{
     display: none;
 }
@@ -492,6 +493,33 @@ label{
 }
 .ui-widget-header{
     background-color: #000;
+}
+.product-carousel{
+    width: 330px;
+}
+.product-wrap{
+    padding: 100px 0 125px 0;
+}
+.size-radio input[type="radio"]{
+    display: none;
+
+}
+.size-radio label{
+    font-size: 14px;
+    font-family: Harmonia_semibold;
+    color: #34404b;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]:checked +label{
+    color: #ff5912;
+    font-size: 18px;
+}
+.size-radio + .size-radio{
+    margin-left: 20px;
+}
+.choose-size span{
+    margin-right: 40px;
 }
 /*ALL STYLES END*/
 

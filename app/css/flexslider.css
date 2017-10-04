@@ -75,7 +75,6 @@ html[xmlns] .flexslider .slides {
 .flexslider {
   margin: 0 0 60px;
   background: #fff;
-  border: 4px solid #fff;
   position: relative;
   zoom: 1;
   -webkit-border-radius: 4px;
@@ -223,7 +222,7 @@ html[xmlns] .flexslider .slides {
   cursor: default;
 }
 .flex-control-thumbs {
-  margin: 5px 0 0;
+  margin: 70px 0 0;
   position: static;
   overflow: hidden;
   display: -webkit-box;
@@ -240,14 +239,20 @@ html[xmlns] .flexslider .slides {
   height: 70px;
   float: left;
   margin: 0;
+  background-color: #f4f6f8;
+}
+.flex-control-thumbs li:hover{
+  background-color: #ff5912;
 }
 .flex-control-thumbs img {
   height: 100%;
+  padding: 10px ;
   cursor: pointer;
   -moz-user-select: none;
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+  opacity: 0.5;
 }
 .flex-control-thumbs img:hover {
   opacity: 1;
