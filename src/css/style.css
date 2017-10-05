@@ -288,6 +288,9 @@ label{
     background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
     margin-bottom: 60px;
 }
+.item-flexslider{
+    position: relative;
+}
 .items-carousel .carousel-text span{
     font-family: 'Harmonia_black';
     display: inline-block;

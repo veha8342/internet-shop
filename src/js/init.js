@@ -77,7 +77,11 @@ $( function() {
     });
 
     //formstyler
-    $('.custom-number').styler();
+    $(window).load(function() {
+        $('.item-flexslider').flexslider({
+            animation: "slide"
+        });
+    });
 
 
 });
