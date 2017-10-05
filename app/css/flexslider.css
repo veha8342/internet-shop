@@ -224,6 +224,36 @@ html[xmlns] .flexslider .slides {
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
+.item-flexslider .flex-control-nav{
+  bottom: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  width: auto;
+  left: -65px;
+}
+.item-flexslider .flex-control-paging li a{
+  background: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-right: 0;
+  width: 16px;
+  height: 10px;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+.item-flexslider .flex-control-paging li a:hover{
+  background-color: #ff5912;
+}
+.item-flexslider .flex-direction-nav{
+  display: none;
+}
+.item-flexslider .flex-control-paging li a.flex-active{
+  background-color: #ff5912;
+  width: 36px;
+}
 .flex-control-thumbs {
   margin: 70px 0 0;
   position: static;
