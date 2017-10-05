@@ -83,6 +83,13 @@ label{
 .orange-bg{
     background-color: #ff5912;
 }
+.btn-radius{
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+}
+.btn-default{
+    background-color: #ff5912;
+}
 /*DEFAULT CLASSES END*/
 
 /*DEFAULT COMPONENT START*/
@@ -617,5 +624,14 @@ label{
 .choose-size span{
     margin-right: 40px;
 }
+.order-form{
+    padding: 40px 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+}
+.product-price{
+    margin-right: auto;
+}
+
 /*ALL STYLES END*/
 

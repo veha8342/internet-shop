@@ -93,8 +93,16 @@
                 <div class="col-md-7">
                     <div class="product-description">
                         <div class="order-info">
+                           <div class="title">
+                               <span class="orange-text">full winter text</span>
+                           </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, asperiores
+                                at dignissimos doloribus
+                                eligendi et illum ipsum nostrum obcaecati,
+                                optio quasi temporibus! Dolor doloribus dolorum eum nemo nesciunt saepe sint!
+                            </p>
                             <div class="order-form">
-                                <form name="product-option flex-container">
+                                <form id="product-option" class="flex-container justify-sp-between">
                                     <div class="choose-size flex-container align-center">
                                         <span>Choose size</span>
                                         <div class="size-radio-btn-group flex-container align-center">
@@ -116,14 +124,22 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="quantity">
+                                    <div class="quantity flex-container align-center justify-sp-between">
                                         <span>Choose quantity</span>
                                         <input type="number" name="quantity" class="custom-number">
                                     </div>
                                 </form>
                             </div>
-                            <div class="order-info">
-
+                            <div class="order-now flex-container align-center">
+                                <div class="product-price">
+                                    <span>Price:</span><span class="price">120$</span>
+                                </div>
+                                <ul class="product-share">
+                                    <a href="#"><span class="custom-icon icon-amex-ic"></span></a>
+                                    <a href="#"><span class="custom-icon icon-amex-ic"></span></a>
+                                    <a href="#"><span class="custom-icon icon-amex-ic"></span></a>
+                                </ul>
+                                <input type="submit" value="order-now" form="product-option" class="btn btn-default btn-radius">
                             </div>
                         </div>
                     </div>
