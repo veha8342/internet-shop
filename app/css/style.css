@@ -321,6 +321,10 @@ label{
 .item-flexslider{
     position: relative;
 }
+.item-flexslider {
+    padding-left: -webkit-calc(8.3333% + 30px);
+    padding-left: calc(8.3333% + 30px);
+}
 .items-carousel .carousel-text span{
     font-family: 'Harmonia_black';
     display: inline-block;

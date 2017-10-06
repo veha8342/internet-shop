@@ -77,9 +77,9 @@ html[xmlns] .flexslider .slides {
   background: #fff;
   position: relative;
   zoom: 1;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  /*-webkit-border-radius: 4px;*/
+  /*-moz-border-radius: 4px;*/
+  /*border-radius: 4px;*/
   -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -204,12 +204,10 @@ html[xmlns] .flexslider .slides {
   zoom: 1;
   *display: inline;
 }
-.flex-control-nav li + li{
-  margin-left: 12px;
-}
+
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 16px;
   display: block;
   background: #666;
   background: rgba(0, 0, 0, 0.5);
@@ -219,9 +217,9 @@ html[xmlns] .flexslider .slides {
   -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  /*-webkit-border-radius: 20px;*/
+  /*-moz-border-radius: 20px;*/
+  /*border-radius: 20px;*/
 }
 .flex-control-paging li a:hover {
   background: #333;
@@ -235,16 +233,23 @@ html[xmlns] .flexslider .slides {
 .item-flexslider .flex-control-nav{
   bottom: auto;
   top: 50%;
-  transform: translateY(-50%) rotate(90deg);
   width: auto;
-  left: -65px;
+  transform: translateY(-50%);
+  left: 0;
+}
+.item-flexslider .flex-control-nav li{
+  display: block;
+  margin: 0;
+}
+.item-flexslider .flex-control-nav li + li{
+  margin-top: 10px;
 }
 .item-flexslider .flex-control-paging li a{
   background: #fff;
   box-shadow: none;
   border-right: 0;
-  width: 16px;
-  height: 10px;
+  width: 10px;
+  height: 16px;
   transition: all .3s linear;
 }
 .item-flexslider .flex-control-paging li a:hover{
@@ -255,7 +260,7 @@ html[xmlns] .flexslider .slides {
 }
 .item-flexslider .flex-control-paging li a.flex-active{
   background-color: #ff5912;
-  width: 36px;
+  height: 36px;
 }
 .flex-control-thumbs {
   margin: 70px 0 0;
