@@ -230,46 +230,46 @@ label{
     vertical-align: middle;
     margin-right: 10px;
 }
-.header .top-header{
+header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
 }
-.header .top-header .phones-list li+li{
+header .top-header .phones-list li+li{
     margin-left: 20px;
 }
-.header .top-header .phones-list li span.custom-icon{
+header .top-header .phones-list li span.custom-icon{
     margin-right: 10px;
 }
-.header .top-header .social-nav{
+header .top-header .social-nav{
     display: flex;
     align-items: center;
 }
-.header .top-header .social-nav a + a{
+header .top-header .social-nav a + a{
     margin-left: 20px;
 }
-.header .bottom-header .logo{
+header .bottom-header .logo{
     margin: 40px 0;
 }
-.header .bottom-header .header-nav li{
+header .bottom-header .header-nav li{
     font-family: 'Harmonia_regular';
     display: inline-block;
     font-size: 16px;
 }
-.header .bottom-header .header-nav li a:hover{
+header .bottom-header .header-nav li a:hover{
     color: #ff5912;
 }
 .header .bottom-header .header-nav li + li{
     margin-left: 30px;
 }
-.header .bottom-header .user-nav{
+header .bottom-header .user-nav{
     position: relative;
     flex-grow: 0.5;
     text-align: end;
 }
-.header .bottom-header .user-nav a + a{
+header .bottom-header .user-nav a + a{
     margin-left: 30px;
 }
-.header .bottom-header .user-nav a:last-child::before{
+header .bottom-header .user-nav a:last-child::before{
     content: "5";
     width: 20px;
     height: 20px;
