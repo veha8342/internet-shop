@@ -216,7 +216,11 @@ label{
 .more-info-on-hover .item-controls li + li{
     margin-left: 30px;
 }
-
+@media(max-width: 1199px){
+    .item-description, .more-info-on-hover{
+        padding: 0;
+    }
+}
 .item:hover .more-info-on-hover{
     opacity: 1;
 }
@@ -258,7 +262,7 @@ header .bottom-header .header-nav li{
 header .bottom-header .header-nav li a:hover{
     color: #ff5912;
 }
-.header .bottom-header .header-nav li + li{
+header .bottom-header .header-nav li + li{
     margin-left: 30px;
 }
 header .bottom-header .user-nav{
@@ -283,6 +287,15 @@ header .bottom-header .user-nav a:last-child::before{
     text-align: center;
     line-height: 20px;
 }
+@media (max-width: 990px){
+    header .bottom-header .header-nav{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+    }
+}
+
 .items-carousel{
     min-height: 650px;
     background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
@@ -330,6 +343,9 @@ header .bottom-header .user-nav a:last-child::before{
     display: flex;
     align-items: center;
 }
+.text-area span + span{
+    margin-top: 10px;
+}
 .title-sale{
     padding: 120px 0 80px 0;
 }
@@ -345,6 +361,13 @@ header .bottom-header .user-nav a:last-child::before{
     justify-content: space-around;
     padding: 30px 0;
     position: relative;
+}
+.best-sale-list .item-mini-title{
+    font-size: 18px;
+    font-family: Harmonia_regular;
+    white-space: nowrap;
+    overflow: inherit;
+    text-overflow: ellipsis;
 }
 .best-sale-list .item-mini:hover{
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
@@ -394,6 +417,10 @@ header .bottom-header .user-nav a:last-child::before{
 .sales-block{
     position: relative;
 }
+.title-season span{
+    font-size: 22px;
+    font-family: Harmonia_regular;
+}
 .sales-block > div{
     display: inline-block;
     width: 50px;
@@ -408,7 +435,17 @@ header .bottom-header .user-nav a:last-child::before{
     left: 0;
     top: 0;
 }
-
+.title-sales{
+    color: #fff;
+    position: absolute;
+    left: 15%;
+}
+.title-sales span{
+    display: block;
+}
+.title-sales span:last-child{
+    font-size: 18px;
+}
 .category-wrap{
     padding-top: 120px;
 }
@@ -436,6 +473,10 @@ header .bottom-header .user-nav a:last-child::before{
 }
 .footer-wrap .logo a{
     margin-bottom: 20px;
+}
+.footer-wrap .about-us li a{
+    font-size: 14px;
+    font-family: Harmonia_regular;
 }
 .footer-wrap .about-us a:hover{
     color: #ff5912;
