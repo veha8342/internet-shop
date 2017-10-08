@@ -241,6 +241,11 @@ label{
         padding: 0;
     }
 }
+@media(max-width: 991px){
+    .item{
+        margin-bottom: 30px;
+    }
+}
 .item:hover .more-info-on-hover{
     opacity: 1;
 }
@@ -253,6 +258,9 @@ label{
 .subscribe-input-group label{
     vertical-align: middle;
     margin-right: 10px;
+}
+.header{
+    position: relative;
 }
 header .top-header{
     border-bottom: 1px solid #edeff1;
@@ -293,11 +301,6 @@ header .bottom-header .header-nav li + li{
 }
 header .bottom-header .user-nav{
     position: relative;
-    -webkit-box-flex: 0.5;
-    -webkit-flex-grow: 0.5;
-        -ms-flex-positive: 0.5;
-            flex-grow: 0.5;
-    text-align: end;
 }
 header .bottom-header .user-nav a + a{
     margin-left: 30px;
@@ -317,7 +320,7 @@ header .bottom-header .user-nav a:last-child::before{
     text-align: center;
     line-height: 20px;
 }
-@media (max-width: 990px){
+@media (max-width: 991px){
     header .bottom-header .header-nav{
         display: none;
     }
@@ -466,6 +469,12 @@ header .bottom-header .user-nav a:last-child::before{
 .best-sale-list .item-mini .item-rating{
     color: #ff5912;
 }
+@media(max-width: 991px){
+    .item-mini .item-mini-description .price-wrap{
+        bottom: 0;
+        right: 0;
+    }
+}
 /*DEFAULT COMPONENT END*/
 
 /*ALL STYLES START*/
@@ -517,6 +526,14 @@ header .bottom-header .user-nav a:last-child::before{
     color: #fff;
     position: absolute;
     left: 15%;
+}
+@media(max-width: 992px){
+    .kit{
+        margin-bottom: 30px;
+    }
+    .kit .title-sale{
+        left: 12%;
+    }
 }
 .title-sales span{
     display: block;
