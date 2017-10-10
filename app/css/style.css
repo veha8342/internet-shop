@@ -259,6 +259,20 @@ label{
     vertical-align: middle;
     margin-right: 10px;
 }
+@media(max-width: 479px){
+   .subscribe-form{
+       -webkit-flex-wrap: wrap;
+           -ms-flex-wrap: wrap;
+               flex-wrap: wrap;
+   }
+    .subscribe-description{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px;
+    }
+}
 .header{
     position: relative;
 }
@@ -333,6 +347,24 @@ header .bottom-header .user-nav a:last-child::before{
                 justify-content: center;
         margin-top: 30px;
     }
+    .top-header .flex-container{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .top-header .social-nav{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .bottom-header .flex-container{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .bottom-header .flex-container .logo{
+        margin: 20px 0 0 0;
+    }
+
 }
 @media (max-width: 991px){
     header .bottom-header .header-nav{
@@ -539,14 +571,43 @@ header .bottom-header .user-nav a:last-child::before{
 .title-sales{
     color: #fff;
     position: absolute;
-    left: 15%;
+    left: 13%;
+}
+@media(max-width: 479px){
+    .kit{
+        padding: 0;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .kit .title-sales{
+        left: 46%;
+        top: 12%;
+    }
+    .kit div + div{
+        margin-bottom: 20px;
+    }
+    .kit .sales-block{
+        margin: 20px;
+    }
+    .kit .title-season{
+        text-align: center;
+    }
+    .kit .title-season span{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
 }
 @media(max-width: 992px){
     .kit{
         margin-bottom: 30px;
     }
     .kit .title-sale{
-        left: 12%;
+        left: 10%;
     }
 }
 .title-sales span{
@@ -628,6 +689,40 @@ header .bottom-header .user-nav a:last-child::before{
 .footer-nav .payments a + a{
     margin-left: 10px;
 }
+@media(max-width: 479px){
+    .footer-nav .logo{
+        margin-bottom: 20px;
+    }
+    .footer-nav .logo a{
+        text-align: center;
+    }
+    .footer-nav{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .footer-nav .about-us ul + ul{
+        margin-left: 50px;
+    }
+    .footer .footer-nav .payments{
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+}
+
 .range{
     margin-top: 40px;
 }
