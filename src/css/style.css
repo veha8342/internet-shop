@@ -303,6 +303,9 @@ header .bottom-header .user-nav a:last-child::before{
     line-height: 20px;
 }
 @media(max-width: 479px){
+    .top-header .phones-list{
+        width: 100%;
+    }
     .user-nav{
         width: 100%;
         order: 1;
@@ -324,7 +327,7 @@ header .bottom-header .user-nav a:last-child::before{
     }
 
 }
-@media (max-width: 991px){
+@media (max-width: 768px){
     header .bottom-header .header-nav{
         display: none;
     }
@@ -488,21 +491,18 @@ header .bottom-header .user-nav a:last-child::before{
     position: absolute;
     left: 13%;
 }
+
 @media(max-width: 479px){
     .kit{
         padding: 0;
         justify-content: center;
         flex-wrap: wrap;
     }
-    .kit .title-sales{
-        left: 46%;
-        top: 12%;
-    }
     .kit div + div{
         margin-bottom: 20px;
     }
     .kit .sales-block{
-        margin: 20px;
+        margin-right: 20px;
     }
     .kit .title-season{
         text-align: center;
@@ -511,10 +511,28 @@ header .bottom-header .user-nav a:last-child::before{
         display: inline-block;
         margin-bottom: 20px;
     }
+    .kit .title-sales{
+        left: 46%;
+        top: 15%;
+    }
 }
 @media(max-width: 576px){
     .kit{
-        padding: 10px 35px;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .kit .sales-block{
+        margin: 30px 30px;
+    }
+    .kit .title-sales{
+        left: 19%;
+        top: 28%;
+    }
+    .kit .add-to-cart{
+        display: flex;
+        justify-content: center;
     }
 }
 @media(max-width: 992px){
@@ -606,6 +624,28 @@ header .bottom-header .user-nav a:last-child::before{
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+    }
+}
+@media(max-width: 768px){
+    .footer-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-nav .about-us{
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 992px){
+    .footer-wrap{
+        padding: 50px 0;
+    }
+    .footer-nav .about-us ul + ul{
+        margin-left: 35px;
+    }
+    .footer-nav .logo a{
+        text-align: center;
     }
 }
 
