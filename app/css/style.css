@@ -345,7 +345,7 @@ header .bottom-header .user-nav a:last-child::before{
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin-top: 30px;
+        margin: 30px 0;
     }
     .top-header .flex-container{
         -webkit-flex-wrap: wrap;
@@ -400,6 +400,11 @@ header .bottom-header .user-nav a:last-child::before{
 }
 .items-carousel .price-wrap a span{
     margin-left: 10px;
+}
+@media(max-width: 479){
+    .items-carousel-description .title{
+        font-size: 20px;
+    }
 }
 .default-section .load-more{
     background-color: #fff;
@@ -600,6 +605,11 @@ header .bottom-header .user-nav a:last-child::before{
     .kit .title-season span{
         display: inline-block;
         margin-bottom: 20px;
+    }
+}
+@media(max-width: 576px){
+    .kit{
+        padding: 10px 35px;
     }
 }
 @media(max-width: 992px){
