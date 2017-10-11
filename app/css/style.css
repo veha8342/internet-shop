@@ -118,7 +118,6 @@ label{
 .default-section{
     padding: 60px 0;
 }
-
 .checkbox-group input[type="checkbox"]{
     display: none;
 }
@@ -145,6 +144,7 @@ label{
 .checkbox-group + .checkbox-group{
     margin-top: 35px;
 }
+
 .item{
     background-color: #fff;
     padding: 30px 10px;
@@ -790,7 +790,7 @@ header .bottom-header .user-nav a:last-child::before{
         text-align: center;
     }
 }
-
+/*CATEGORY START*/
 .range{
     margin-top: 40px;
 }
@@ -875,6 +875,22 @@ header .bottom-header .user-nav a:last-child::before{
 .product-price{
     margin-right: auto;
 }
-
+.mobile-sidebar-btn{
+    font-size: 30px;
+    color: #ff5912;
+    display: none;
+    margin-bottom: 20px;
+}
+@media(max-width: 991px) {
+    .mobile-sidebar-btn{
+        display: block;
+    }
+    .mobile-sidebar-wrap{
+        position: absolute;
+        -webkit-transform: translateX(-110%);
+            -ms-transform: translateX(-110%);
+                transform: translateX(-110%);
+    }
+}
 /*ALL STYLES END*/
 
