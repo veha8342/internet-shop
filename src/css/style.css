@@ -741,7 +741,14 @@ header .bottom-header .user-nav a:last-child::before{
     .mobile-sidebar-wrap{
         position: absolute;
         transform: translateX(-110%);
+        transition: all .3s linear;
     }
-}
+    main.show .mobile-sidebar-wrap{
+            transform: translateX(0);
+            left: 0;
+            right: 0;
+        }
+    }
+
 /*ALL STYLES END*/
 

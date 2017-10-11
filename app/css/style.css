@@ -890,7 +890,18 @@ header .bottom-header .user-nav a:last-child::before{
         -webkit-transform: translateX(-110%);
             -ms-transform: translateX(-110%);
                 transform: translateX(-110%);
+        -webkit-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
     }
-}
+    main.show .mobile-sidebar-wrap{
+            -webkit-transform: translateX(0);
+                -ms-transform: translateX(0);
+                    transform: translateX(0);
+            left: 0;
+            right: 0;
+        }
+    }
+
 /*ALL STYLES END*/
 
