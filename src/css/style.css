@@ -76,7 +76,7 @@ label{
     background-color: #ff5912;
 }
 .btn-radius{
-    border-radius: 20px;
+    border-radius: 0;
 }
 .btn-default{
     background-color: #ff5912;
@@ -95,13 +95,14 @@ label{
     font-family: 'Harmonia_black';
     text-transform: uppercase;
     font-size: 36px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 .subtitle{
     display: block;
     font-size: 16px;
     font-family: 'Harmonia_regular';
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+    color: #495662;
 }
 .title.big{
     font-size: 52px;
@@ -234,9 +235,22 @@ label{
 .subscribe-form{
     padding: 37px 42px;
 }
+.subscribe-description span:first-child{
+    font-family: Harmonia_bold;
+    margin-right: 25px;
+    font-size: 18px;
+}
+.subscribe-description span:last-child{
+    font-family: Harmonia_italic;
+}
 .subscribe-input-group label{
     vertical-align: middle;
     margin-right: 10px;
+}
+.subscribe-input-group{
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 @media(max-width: 479px){
    .subscribe-form{
@@ -245,6 +259,11 @@ label{
     .subscribe-description{
         display: flex;
         margin-bottom: 20px;
+    }
+}
+@media(max-width: 599px){
+    .subscribe-description{
+
     }
 }
 .header{
@@ -326,7 +345,7 @@ header .bottom-header .user-nav a:last-child::before{
     }
 
 }
-@media (max-width: 768px){
+@media (max-width: 991px){
     header .bottom-header .header-nav{
         display: none;
     }
@@ -379,14 +398,19 @@ header .bottom-header .user-nav a:last-child::before{
 }
 
 .text-area{
-    padding: 29px 0;
+    padding: 32px 0;
     background-color: #fff;
     flex-direction: column;
     display: flex;
     align-items: center;
 }
+.text-area span:first-child{
+    font-size: 16px;
+}
 .text-area span + span{
     margin-top: 10px;
+    font-family: Harmonia_italic;
+    color: #bdc0c2;
 }
 .title-sale{
     padding: 120px 0 80px 0;
@@ -421,8 +445,8 @@ header .bottom-header .user-nav a:last-child::before{
 .best-sale-list .item-mini .price-wrap{
     opacity: 0;
     position: absolute;
-    bottom: 48px;
-    right: 48px;
+    bottom: 41px;
+    right: 28px;
 }
 .best-sale-list .item-mini .price-wrap .orange-text{
     margin-left: 5px;
@@ -453,7 +477,7 @@ header .bottom-header .user-nav a:last-child::before{
 
 /*ALL STYLES START*/
 .kit{
-    padding: 10px 60px;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -462,12 +486,21 @@ header .bottom-header .user-nav a:last-child::before{
     font-family: 'Harmonia_bold';
     font-size: 30px;
 }
+.kit .add-to-cart .custom-icon{
+    margin-right: 20px;
+}
+.kit .title-season p{
+    font-family: Harmonia_italic;
+    color: #495662;
+}
 .sales-block{
     position: relative;
 }
 .title-season span{
+    margin-bottom: 15px;
     font-size: 22px;
-    font-family: Harmonia_regular;
+    font-family: Harmonia_bold;
+    display: inline-block;
 }
 .sales-block > div{
     display: inline-block;
@@ -477,7 +510,7 @@ header .bottom-header .user-nav a:last-child::before{
 .sales-block div:first-child{
     transform: rotate(45deg);
 }
-.sales-block div:last-child{
+.sales-block div:nth-child(2){
     transform: rotate(-45deg);
     position: absolute;
     left: 0;
@@ -486,7 +519,8 @@ header .bottom-header .user-nav a:last-child::before{
 .title-sales{
     color: #fff;
     position: absolute;
-    left: 13%;
+    left: 24%;
+    top: 26%;
 }
 
 @media(max-width: 479px){
@@ -513,7 +547,7 @@ header .bottom-header .user-nav a:last-child::before{
         top: 15%;
     }
 }
-@media(max-width: 576px){
+@media(max-width: 599px){
     .kit{
         padding: 0;
         justify-content: center;
@@ -565,7 +599,7 @@ header .bottom-header .user-nav a:last-child::before{
     margin-bottom: 30px;
 }
 .footer-wrap{
-    padding: 90px 0;
+    padding: 69px 0;
 }
 .footer-wrap .logo{
     display: flex;
@@ -632,6 +666,9 @@ header .bottom-header .user-nav a:last-child::before{
         width: 100%;
         justify-content: space-around;
         margin-top: 20px;
+    }
+    .footer-nav .payments .title{
+        text-align: center;
     }
 }
 @media(max-width: 992px){
