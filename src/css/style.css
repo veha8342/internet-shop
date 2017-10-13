@@ -236,6 +236,7 @@ label{
     padding: 37px 42px;
 }
 .subscribe-description span:first-child{
+    display: block;
     font-family: Harmonia_bold;
     margin-right: 25px;
     font-size: 18px;
@@ -252,11 +253,17 @@ label{
     display: flex;
     align-items: center;
 }
+@media(max-width: 768px){
+    .subscribe-description span:first-child{
+        display: block;
+    }
+}
 @media(max-width: 479px){
    .subscribe-form{
        flex-wrap: wrap;
    }
     .subscribe-description{
+        flex-wrap: wrap;
         display: flex;
         margin-bottom: 20px;
     }
@@ -527,6 +534,7 @@ header .bottom-header .user-nav a:last-child::before{
     .kit{
         padding: 0;
         justify-content: center;
+        display: flex;
         flex-wrap: wrap;
     }
     .kit div + div{
@@ -620,10 +628,13 @@ header .bottom-header .user-nav a:last-child::before{
     font-size: 14px;
     font-family: Harmonia_regular;
 }
-.footer-wrap .about-us ul + ul{
-    margin-left: 115px;
+.footer-wrap .about-us ul{
     display: list-item;
     list-style-type: disc;
+}
+.footer-wrap .about-us ul + ul{
+    margin-left: 115px;
+
 }
 .footer-nav{
     display: flex;
@@ -647,6 +658,9 @@ header .bottom-header .user-nav a:last-child::before{
     .footer-nav{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .footer-nav .about-us{
+        padding: 0 0 0 15px;
     }
     .footer-nav .about-us ul + ul{
         margin-left: 50px;
@@ -672,8 +686,17 @@ header .bottom-header .user-nav a:last-child::before{
     }
 }
 @media(max-width: 992px){
+    .footer-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .footer-wrap{
         padding: 50px 0;
+    }
+    .footer-nav .about-us{
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 20px;
     }
     .footer-nav .about-us ul + ul{
         margin-left: 35px;

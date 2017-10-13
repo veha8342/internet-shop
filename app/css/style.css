@@ -256,6 +256,7 @@ label{
     padding: 37px 42px;
 }
 .subscribe-description span:first-child{
+    display: block;
     font-family: Harmonia_bold;
     margin-right: 25px;
     font-size: 18px;
@@ -278,6 +279,11 @@ label{
         -ms-flex-align: center;
             align-items: center;
 }
+@media(max-width: 768px){
+    .subscribe-description span:first-child{
+        display: block;
+    }
+}
 @media(max-width: 479px){
    .subscribe-form{
        -webkit-flex-wrap: wrap;
@@ -285,6 +291,9 @@ label{
                flex-wrap: wrap;
    }
     .subscribe-description{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -294,7 +303,7 @@ label{
 }
 @media(max-width: 599px){
     .subscribe-description{
-        
+
     }
 }
 .header{
@@ -626,6 +635,10 @@ header .bottom-header .user-nav a:last-child::before{
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
@@ -739,10 +752,13 @@ header .bottom-header .user-nav a:last-child::before{
     font-size: 14px;
     font-family: Harmonia_regular;
 }
-.footer-wrap .about-us ul + ul{
-    margin-left: 115px;
+.footer-wrap .about-us ul{
     display: list-item;
     list-style-type: disc;
+}
+.footer-wrap .about-us ul + ul{
+    margin-left: 115px;
+
 }
 .footer-nav{
     display: -webkit-box;
@@ -780,6 +796,9 @@ header .bottom-header .user-nav a:last-child::before{
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
+    }
+    .footer-nav .about-us{
+        padding: 0 0 0 15px;
     }
     .footer-nav .about-us ul + ul{
         margin-left: 50px;
@@ -820,8 +839,24 @@ header .bottom-header .user-nav a:last-child::before{
     }
 }
 @media(max-width: 992px){
+    .footer-nav{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
     .footer-wrap{
         padding: 50px 0;
+    }
+    .footer-nav .about-us{
+        width: 100%;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        margin-top: 20px;
     }
     .footer-nav .about-us ul + ul{
         margin-left: 35px;
