@@ -435,6 +435,45 @@ header .bottom-header .user-nav a:last-child::before{
 .items-carousel .price-wrap a span{
     margin-left: 10px;
 }
+.item-flexslider .carousel-indicators{
+    width: auto;
+    bottom: auto;
+    top: 50%;
+    width: auto;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+}
+.item-flexslider .carousel-indicators li {
+    width: 10px;
+    height: 16px;
+    display: block;
+    background: #fff;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    border: 0;
+    margin: 0;
+}
+
+.item-flexslider .carousel-indicators li{
+    display: block;
+    margin: 0;
+}
+.item-flexslider .carousel-indicators li + li{
+    margin-top: 10px;
+}
+.item-flexslider .carousel-indicators .active{
+    background-color: #ff5912;
+    height: 36px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+
+}
 @media(max-width: 479){
     .items-carousel-description .title{
         font-size: 20px;

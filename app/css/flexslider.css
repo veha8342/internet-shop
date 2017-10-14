@@ -200,21 +200,16 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 
-.flex-control-paging li a {
-  width: 10px;
-  height: 16px;
-  display: block;
-  background: #666;
-  background: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  text-indent: -9999px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+
+  /*text-indent: -9999px;*/
+  /*-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);*/
+  /*-moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);*/
+  /*-o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);*/
+  /*box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);*/
   /*-webkit-border-radius: 20px;*/
   /*-moz-border-radius: 20px;*/
   /*border-radius: 20px;*/
-}
+
 .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
@@ -233,13 +228,6 @@ html[xmlns] .flexslider .slides {
           transform: translateY(-50%);
   left: 0;
 }
-.item-flexslider .flex-control-nav li{
-  display: block;
-  margin: 0;
-}
-.item-flexslider .flex-control-nav li + li{
-  margin-top: 10px;
-}
 .item-flexslider .flex-control-paging li a{
   background: #fff;
   -webkit-box-shadow: none;
@@ -257,10 +245,7 @@ html[xmlns] .flexslider .slides {
 .item-flexslider .flex-direction-nav{
   display: none;
 }
-.item-flexslider .flex-control-paging li a.flex-active{
-  background-color: #ff5912;
-  height: 36px;
-}
+
 .flex-control-thumbs {
   margin: 70px 0 0;
   position: static;
