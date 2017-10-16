@@ -77,17 +77,14 @@ $( function() {
     });
 
     //formstyler
-    $(window).load(function() {
-        $('.item-flexslider').flexslider({
-            animation: "slide"
-        });
-    });
+    $('.custom-number').styler();
 
     //slicknav init
     $('.header-nav').slicknav({
         appendTo: 'header .bottom-header .flex-container',
         label: ''
     });
+
 
 
 });
