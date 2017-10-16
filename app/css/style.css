@@ -1059,11 +1059,12 @@ header .bottom-header .user-nav a:last-child::before{
     margin-bottom: 30px;
     display: block;
 }
-.product-description .order-info .title span + span{
+.product-description .order-info .product-text span{
     font-size: 18px;
+    margin-bottom: 40px;
     display: inline-block;
 }
-.product-description .order-info p{
+.product-description .order-info .product-text p{
     line-height: 32px;
     font-size: 16px;
     margin-bottom: 45px;
@@ -1080,7 +1081,37 @@ header .bottom-header .user-nav a:last-child::before{
 }
 .product-description .product-share input[type="submit"]{
     margin-left: 15px;
+}@media(max-width: 479px){
+    .product-description .order-now{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        margin-bottom: 20px;
+    }
+    .product-description .order-now .product-price{
+        margin-right: auto;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+    }
+    .product-share input[type="submit"]{
+        margin-top: 20px;
+    }
 }
-
+@media(max-width: 599px){
+    .order-form #product-option{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .order-form #product-option .choose-size{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
 /*ALL STYLES END*/
 

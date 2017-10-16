@@ -73,7 +73,10 @@
     <div class="product-wrap white-bg">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 col-xs-12">
+                    <div class="title big orange-text text-center hidden-lg hidden-md">
+                        <span>full winter text</span>
+                    </div>
                     <div class="product-carousel center-block">
                         <div class="flexslider">
                             <ul class="slides">
@@ -93,16 +96,19 @@
                 <div class="col-md-7">
                     <div class="product-description">
                         <div class="order-info">
-                           <div class="title">
+                           <div class="title hidden-xs hidden-sm">
                                <span class="orange-text">full winter text</span>
-                               <span>Half Jacket + Skiny Trousers + Boot leather</span>
                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, asperiores
-                                at dignissimos doloribus
-                                eligendi et illum ipsum nostrum obcaecati,
-                                optio quasi temporibus! Dolor doloribus dolorum eum nemo nesciunt saepe sint!
-                                and typesetting industry
-                            </p>
+                            <div class="product-text">
+                                <span>Half Jacket + Skiny Trousers + Boot leather</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, asperiores
+                                    at dignissimos doloribus
+                                    eligendi et illum ipsum nostrum obcaecati,
+                                    optio quasi temporibus! Dolor doloribus dolorum eum nemo nesciunt saepe sint!
+                                    and typesetting industry
+                                </p>
+                            </div>
+
                             <div class="order-form">
                                 <form id="product-option" class="flex-container justify-sp-between">
                                     <div class="choose-size flex-container align-center">
@@ -128,7 +134,7 @@
                                     </div>
                                     <div class="quantity flex-container align-center justify-sp-between">
                                         <span>Choose quantity</span>
-                                        <input type="number" name="quantity" class="custom-number">
+                                        <input type="number" name="quantity" class="custom-number" min="1" value="1">
                                     </div>
                                 </form>
                             </div>
