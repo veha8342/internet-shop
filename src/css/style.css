@@ -141,7 +141,6 @@ label{
     padding: 30px 10px;
     transition: all .2s linear;
     text-align: center;
-    height: 372px;
     position: relative;
 }
 .item:hover{
@@ -175,7 +174,9 @@ label{
     font-family: 'Harmonia_bold';
     color: #ff5912;
 }
-
+.item-flexslider .item{
+    height: auto;
+}
 .more-info-on-hover .size{
     font-size: 14px;
     color: #34404b;
@@ -388,9 +389,10 @@ header .bottom-header .user-nav a:last-child::before{
     width: auto;
     bottom: auto;
     top: 50%;
+    left: 0;
     width: auto;
     transform: translateY(-50%);
-    left: 0;
+    margin: 0;
 }
 .item-flexslider .carousel-indicators li {
     width: 10px;
@@ -416,6 +418,9 @@ header .bottom-header .user-nav a:last-child::before{
     height: 36px;
     box-shadow: none;
 
+}
+.item-flexslider .carousel{
+    position: static;
 }
 @media(max-width: 479){
     .items-carousel-description .title{
@@ -818,11 +823,15 @@ header .bottom-header .user-nav a:last-child::before{
 .product-price{
     margin-right: auto;
 }
+.sidebar{
+    max-width: 280px;
+}
 .mobile-sidebar-btn{
     font-size: 30px;
     color: #ff5912;
     display: none;
     margin-bottom: 20px;
+    z-index: 100;
 }
 @media(max-width: 991px) {
     .mobile-sidebar-btn{
