@@ -100,6 +100,10 @@ label{
     font-size: 36px;
     margin-bottom: 30px;
 }
+.title span:last-child{
+    display: block;
+    margin-top: 30px;
+}
 .subtitle{
     font-size: 16px;
     font-family: 'Harmonia_regular';
@@ -376,8 +380,12 @@ header .bottom-header .user-nav .counter-item{
     header .bottom-header .header-nav{
         display: none;
     }
+    header .bottom-header .user-nav{
+        text-align: center;
+    }
     .slicknav_menu{
         display: block;
+        margin-left: 30px;
     }
 }
 
@@ -418,6 +426,7 @@ header .bottom-header .user-nav .counter-item{
     margin-left: 10px;
     font-size: 18px;
     font-family: Harmonia_regular;
+    white-space: nowrap;
     color: #ff5912;
 }
 .item-flexslider .carousel-indicators{
@@ -457,9 +466,16 @@ header .bottom-header .user-nav .counter-item{
 .item-flexslider .carousel{
     position: static;
 }
-@media(max-width: 479){
+@media(max-width: 479px){
     .items-carousel-description .title{
         font-size: 20px;
+    }
+     .subtitle{
+        margin-top: 30px;
+        display: inline-block;
+    }
+    .items-carousel .price-wrap a span{
+        font-size: 16px;
     }
 }
 @media(max-width: 767px){
@@ -500,6 +516,9 @@ header .bottom-header .user-nav .counter-item{
 }
 .title-sale{
     padding: 120px 0 80px 0;
+}
+.title-sale > span{
+    display: block;
 }
 @media(max-width: 479px){
     .title-sale{
@@ -678,10 +697,10 @@ header .bottom-header .user-nav .counter-item{
         display: inline-block;
         margin-bottom: 20px;
     }
-    .kit .title-sales{
-        left: 46%;
-        top: 15%;
-    }
+    /*.kit .title-sales{*/
+        /*left: 46%;*/
+        /*top: 15%;*/
+    /*}*/
 }
 @media(max-width: 599px){
     .kit{
@@ -690,14 +709,14 @@ header .bottom-header .user-nav .counter-item{
         flex-wrap: wrap;
 
     }
-    .kit .sales-block{
-        padding: 30px 30px;
-        margin-right: 55px;
-    }
-    .kit .title-sales{
-        left: 19%;
-        top: 28%;
-    }
+    /*.kit .sales-block{*/
+        /*padding: 30px 30px;*/
+        /*margin-right: 55px;*/
+    /*}*/
+    /*.kit .title-sales{*/
+        /*left: 19%;*/
+        /*top: 28%;*/
+    /*}*/
     .kit .add-to-cart{
         display: flex;
         justify-content: center;
@@ -857,11 +876,12 @@ header .bottom-header .user-nav .counter-item{
 }
 .ui-slider-handle{
     border-radius: 50%;
-    transform: translateY(-25%);
     background-color: #000;
+    outline: none;
 }
 .range span.ui-slider-handle{
     background-color: #000;
+    top: -5px;
 }
 .range .range-input-reoup input{
     width: 45px;
@@ -1014,6 +1034,9 @@ header .bottom-header .user-nav .counter-item{
     }
     .product-description .product-price{
         margin-right: 30px;
+    }
+    .title.big{
+        font-size: 30px;
     }
     .product-wrap{
         padding: 0;
