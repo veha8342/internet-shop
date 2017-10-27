@@ -949,6 +949,14 @@ header .bottom-header .user-nav .counter-item{
     margin-bottom: 20px;
     z-index: 100;
 }
+@media(max-width: 479px){
+    .product-carousel{
+        width: 280px;
+    }
+    .default-section .title{
+        font-size: 30px;
+    }
+}
 @media(max-width: 991px) {
     .mobile-sidebar-btn{
         display: inline-block;
@@ -1051,6 +1059,9 @@ header .bottom-header .user-nav .counter-item{
     }
     .product-wrap{
         padding: 0;
+    }
+    .order-now input{
+        width: 100%;
     }
 }
 @media(max-width: 599px){
